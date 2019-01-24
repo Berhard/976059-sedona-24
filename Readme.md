@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Александр Иванов](https://up.htmlacademy.ru/htmlcss/24/user/976059).
-* Наставник: `Анна Пономарёва`(https://htmlacademy.ru/profile/id153610).
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 
