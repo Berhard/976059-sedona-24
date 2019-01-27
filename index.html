@@ -2,11 +2,150 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
+    <title>Sedona hotels</title>
+      </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/1logo.png" width="140" height="70" alt="Sedona">
+        </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+          <ul class=>
+          <li><a href="index.html">Информация</a></li>
+          <li><a href="photo.html">Фото и видео</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="panorams.html">Панорамы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+       <section class="title">
+          <img src="img/1sedona-welcome.png"  alt="ДОБРО ПОЖАЛОВАТЬ!" width="100%">
+          <h2 class="text-title">WELCOME</h2>
+          <p class="inn-title"><em>-to the gorgeous-</em></p>
+          <b class="sedona-title">SEDONA</b>
+          <p><em>"Because the Grand Canyon sucks!"</em></p>
 
+          <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+          <p>РАССМОТРИМ 5 ПРИЧИН, ПОЧЕМУ СЕДОНА ЛУЧШЕ, ЧЕМ ГРАНД-КАНЬОН!</p>
+
+       </section>
+       <section>
+         <ul class="advantage">
+          <li>
+              <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p>-№1-</p>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p><br>
+              <img src="img/1sedona-index.png"  alt="Home"><br>
+          </li>
+          <li>
+             <ul>
+              <li>
+                 <img src="img/1home.png" alt="home">
+                 <h3>Жилье</h3>
+                 <p>Рекомендуем пожить в настоящем Мотеле, всё как в кино!</p>
+              </li>
+             </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <img src="img/1food.png" alt="food" >
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <img src="img/1present.png" alt="Presents">
+                <h3>Сувениры!</h3>
+                <p>Не только китайского, но и местного<br> производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+             <img src="img/1sedona-home.png"  alt="Home">
+             <h2>Там есть мост дьявола</h2>
+             <p>-№2-</p>
+             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </li>
+          <li>
+             <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+             <p>-№3-</p>
+             <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </li>
+          <li>
+             <h2>КРАСИВАЯ ДОРОГА</h2>
+             <p>-№4-</p>
+             <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          </li>
+          <li>
+             <h2>МАЛО ТУРИСТОВ</h2>
+             <p>-№5-</p>
+             <p>БОЛЬШИНСТВО ЕДУТ В ГРАНД КАНЬОН<br> И ТОЛПИТСЯ ТАМ</p>
+          </li>
+        </ul>
+      </section>
+      <section class="hotels">
+        <br><h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p><br>
+        <div class="hotel-search">
+          <h2>Поиск гостиницы</h2>
+          <ul>
+            <li>
+              <p>Дата заезда:</p>
+              <input type="date" name="calendar" value="2017-04-24" max="2017-01-01" min="2017-12-30">
+            </li>
+            <li>
+             <p>Дата выезда:</p>
+             <input type="date" name="calendar" value="2017-07-04" max="2012-06-04" min="2017-12-30">
+            </li>
+            <li>
+             <p>Взрослые</p>
+             <button type="button" class="amount-minus">−</button>
+             <input type="text" name="amount" maxlength="9" value="1">
+             <button type="button" class="amount-plus">+</button>
+            </li>
+            <li>
+             <p>Дети</p>
+             <button type="button" class="amount-minus">−</button>
+             <input type="text" name="amount" maxlength="9" value="1">
+             <button type="button" class="amount-plus">+</button>
+            </li>
+            <li>
+              <button class="search" type="submit"><span>Найти</span></button>
+            </li>
+          </ul>
+
+        </div>
+
+
+
+      </section>
+      <div class="map">
+        <img src="img/1map.png"  alt="Home" width="100%">
+      </div>
+    </main>
+    <footer>
+      <div class="8">
+        <a href="https://twitter.com">
+          <strong>#VIZITSEDONA</strong>
+        </a>
+      </div>
+      <div class="foter-social">
+        <ul>
+          <li> <a class="social-button" href="https://twitter.com">Твиттер</a> </li>
+          <li> <a class="social-button" href="https://www.facebook.com">Фейсбук</a> </li>
+          <li> <a class="social-button" href="https://www.youtube.com">Ютуб</a> </li>
+        </ul>
+      </div>
+        <p class="footer-copyright">
+            <b>Website by</b>
+            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
+    </footer>
   </body>
 </html>
