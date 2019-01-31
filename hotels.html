@@ -10,7 +10,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="10%" height="10%" alt="Sedona">
+        <img src="img/logo-sedona.svg" width="40" height="60" alt="Sedona">
       </a>
       <a class="navigation" href="index.html">Информация</a>
       <a class="navigation" href="#">Фото и видео</a>
@@ -21,18 +21,18 @@
   <main>
     <h1 class="visually-hidden">Фильтр гостиниц</h1>
     <form class="" action="/echo" method="post">
-      <div class="infra">
+      <fieldset class="infra">
         <legend>Инфраструктура</legend>
         <label><input type="checkbox" checked>бассейн</label>
         <label><input type="checkbox">парковка</label>
         <label><input type="checkbox">wi&ndash;fi</label>
-      </div>
-      <div class="type">
+      </fieldset>
+      <fieldset class="type">
         <legend>Тип жилья</legend>
         <label><input type="checkbox" checked>гостиница</label>
         <label><input type="checkbox" checked>мотель</label>
         <label><input type="checkbox" checked>аппартаменты</label>
-      </div>
+      </fieldset>
       <div class="cost">
         <p>стоимость в сутки (p.)</p>
         <input type="text" name="cost" value="от 0">
@@ -55,7 +55,7 @@
     <section class="hotels-information">
       <h2 class="visually-hidden">Гостиница</h2>
       <img src="img/amara.jpg" alt="Amara Resort & Spa">
-      <div class="ihformation">
+      <div class="information">
         <h3>Amara Resort &amp; Spa</h3>
         <div class=information>
           <span class="hotel-name">Гостиница</span>
@@ -77,9 +77,9 @@
     <section class="hotels-information">
       <h2 class="visually-hidden">Мотель</h2>
       <img src="img/desert.jpg" alt="Desert Quail Inn">
-      <div class="ihformation">
+      <div class="information">
         <h3>Desert Quail Inn</h3>
-        <div class=information>
+        <div class="information">
           <span class="hotel-name">Мотель</span>
           <span class="detailed"><a href="#">Подробнее</a></span>
         </div>
@@ -93,13 +93,14 @@
           <span class="star"></span>
           <div class="rating">Рейтинг: 8,9</div>
         </div>
+      </div>
     </section>
     <section class="hotels-information">
       <h2 class="visually-hidden">Аппартаменты</h2>
       <img src="img/villas.jpg" alt="Villas at Poco Diablo">
-      <div class="ihformation">
+      <div class="information">
         <h3>Villas at Poco Diablo</h3>
-        <div class=information>
+        <div class="information">
           <span class="hotel-name">Апартаменты</span>
           <span class="detailed"><a href="#">Подробнее</a></span>
         </div>
