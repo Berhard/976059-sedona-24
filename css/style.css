@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 1200px;
+  height: 56px;
+  text-align: center;
+}
+
+.sedona-background {
+  width: 1200px;
+  height: 509px;
+  background-image: url(../img/background-photo.png), url(../img/intro-mask.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: center;
+}
+
+.sedona-welcome {
+  width: 459px;
+  height: 353px;
+  background-image: url(../img/intro-welcome.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  opacity: 0.75;
+}
+
+.sedona-mask {
+  width: 1200px;
+  height: 59px;
+  background-image: url(../img/intro-mask.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.intro {
+  width: 1200px;
+  height: 216px;
+  text-align: center;
+  background-position-y: -100px;
+  background-color: white;
+}
+
+.photo-bridge {
+  display: inline-block;
+  width: 800px;
+  height: 256px;
+  background-image: url(../img/bridge.png);
+  background-size: 800px 256px;
+  background-position: center;
+}
+
+.icon-1 {
+  width: 74px;
+  height: 70px;
+  margin-top: 61px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../img/icon-1.svg);
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+}
+
+.icon-2 {
+  width: 74px;
+  height: 70px;
+  margin-top: 61px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../img/icon-2.svg);
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+}
+
+.icon-3 {
+  width: 74px;
+  height: 70px;
+  margin-top: 61px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../img/icon-3.svg);
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+}
+
+.photo-home {
+  display: inline-block;
+  width: 800px;
+  height: 256px;
+  background-image: url(../img/home.png);
+  background-size: 100% 100%;
+}
+
+.advantage-one {
+  display: inline-block;
+  width: 400px;
+  height: 256px;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.advantage-one-home, .advantage-one-food, .advantage-one-present {
+  display: inline-block;
+  width: 400px;
+  height: 256px;
+  text-align: center;
+}
+
+.advantage-two {
+  display: inline-block;
+  width: 400px;
+  height: 256px;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.advantage-three, .advantage-four, .advantage-five {
+  display: inline-block;
+  width: 400px;
+  height: 256px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.hotels {
+  width: 1200px;
+  height: 256px;
+  text-align: center;
+}
+
+.hotel-search {
+  display: ;
+  width: 592px;
+  height: 419px;
+  text-align: center;
+}
+
+.search {
+  background-color: #81b3d2;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.footer {
+  width: 1200px;
+  height: 256px;
+}
+
+.social {
+  float: left;
+  width: 290px;
+  margin-right: 90px;
+}
+
+.twitter {
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background: #8dbad6 url(../img/twitter.svg) no-repeat center;
+}

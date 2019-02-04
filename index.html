@@ -4,78 +4,85 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona hotels</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
+      <a class="navigation">Информация</a>
+      <a class="navigation">Фото и видео</a>
       <a class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="40" height="60" alt="Sedona">
+        <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
       </a>
-      <a class="navigation" href="#">Информация</a>
-      <a class="navigation" href="#">Фото и видео</a>
-      <a class="navigation" href="#">Карта штата</a>
+      <a class="navigation">Карта штата</a>
       <a class="navigation" href="hotels.html">Гостиницы</a>
     </nav>
   </header>
   <main class="container">
     <section class="title">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <!--<img src="img/background-photo.png"  alt="Фон">
-        <img src="img/intro-welcome.svg"  alt="ДОБРО ПОЖАЛОВАТЬ!">
-        <img src="img/polygon.png"  alt="полигон">-->
-      <b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      <div class="sedona-background">
+        <div class="sedona-welcome"></div>
+        <div class="sedona-mask"></div>
+      </div>
+      <div class="intro">
+        <b>Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</b>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      </div>
     </section>
     <section>
       <h2 class="visually-hidden">Преимущества Седоны</h2>
       <div class="advantage-one">
-        <h3>Настоящий городок</h3>
+        <h3>Настоящий<br> городок</h3>
         <p>&mdash; &#8470;1 &mdash;</p>
         <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
-        <div class="advantage-one-detailed">
-          <ul>
-            <li>
-              <b class="advantage-one-home">Жилье</b>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li>
-              <b class="advantage-one-food">Еда</b>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li>
-              <b class="advantage-one-present">Сувениры!</b>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
+      </div>
+      <div class="photo-home"></div>
+      <div class="advantage-one-detailed">
+        <div class="advantage-one-home">
+          <div class="icon-1"></div>
+          <b>Жилье</b>
+          <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+        </div>
+        <div class="advantage-one-food">
+          <div class="icon-3"></div>
+          <b>Еда</b>
+          <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+        </div>
+        <div class="advantage-one-present">
+          <div class="icon-2"></div>
+          <b>Сувениры!</b>
+          <p>Не только китайского, но и местного<br> производства!</p>
         </div>
       </div>
+      <div class="photo-bridge"></div>
       <div class="advantage-two">
-        <h3>Там есть мост дьявола</h3>
+        <h3>Там есть<br> мост дьявола</h3>
         <p>&mdash; &#8470;2 &mdash;</p>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
       <div class="advantage-three-four-five">
         <div class="advantage-three">
-          <h3>Небольшая площадь</h3>
+          <h3>Небольшая<br> площадь</h3>
           <p>&mdash; &#8470;3 &mdash;</p>
-          <p>все достопримечательности находятся близко</p>
+          <p>все достопримечательности<br> находятся близко</p>
         </div>
         <div class="advantage-four">
-          <h3>Красивая дорога</h3>
+          <h3>Красивая<br> дорога</h3>
           <p>&mdash; &#8470;4 &mdash;</p>
-          <p>ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p>ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
         </div>
         <div class="advantage-five">
-          <h3>Мало туристов</h3>
+          <h3>Мало<br> туристов</h3>
           <p>&mdash; &#8470;5 &mdash;</p>
-          <p>большинство едет в Гранд Каньонн и толпится там</p>
+          <p>большинство едет в Гранд Каньонн<br> и толпится там</p>
         </div>
       </div>
     </section>
     <div class="hotels">
       <b>Заинтересовались?</b>
-      <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <div class="hotel-search">
         <a href="#">Поиск гостиницы в Седоне</a>
         <form action="/echo" method="post">
@@ -110,17 +117,15 @@
     </div>
   </main>
   <footer>
-    <div class="footer-tw">
-      <a href="https://twitter.com">#vizitsedona</a>
+    <a class="social" href="https://twitter.com">#vizitsedona</a>
+    <div class="social">
+      <a class="social-btn twitter" href="https://twitter.com"></a>
+      <a class="social-btn facebook" href="https://www.facebook.com"></a>
+      <a class="social-btn youtube" href="https://www.youtube.com"></a>
     </div>
-    <div class="foter-social">
-      <a class="social-button" href="https://twitter.com">Твиттер</a>
-      <a class="social-button" href="https://www.facebook.com">Фейсбук</a>
-      <a class="social-button" href="https://www.youtube.com">Ютуб</a>
-    </div>
-    <div class="footer-copyright">
+    <div class="social copyright">
       <b>Website by</b>
-      <a class="button" href="https://htmlacademy.ru">htmlacademy</a>
+      <a class="htmlacademy" href="https://htmlacademy.ru">htmlacademy</a>
     </div>
   </footer>
 </body>
