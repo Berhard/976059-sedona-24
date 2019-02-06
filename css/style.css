@@ -1,5 +1,48 @@
 body {
-  margin: 0;
+  margin-top: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 1200px;
+  height: 56px;
+  font-size: 14x;
+  line-height: 26px;
+  color: #000000;
+}
+
+.main-navigation a,
+.hotel-link a {
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.hotel-link a:hover {
+  color: #9fc4db;
+}
+
+.main-navigation a:focus,
+.hotel-link a:focus {
+  color: #cecece;
+}
+
+.main-navigation a:active,
+.hotel-link a:active {
+  color: #cecece;
 }
 
 header {
@@ -8,47 +51,43 @@ header {
   text-align: center;
 }
 
-.sedona-background {
-  width: 1200px;
-  height: 509px;
-  background-image: url(../img/background-photo.png), url(../img/intro-mask.svg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-position-x: center;
-}
-
-.sedona-welcome {
+.welcome img {
+  display: block;
+  margin: 0 auto;
   width: 459px;
   height: 353px;
-  background-image: url(../img/intro-welcome.svg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  opacity: 0.75;
 }
 
-.sedona-mask {
+.welcome {
   width: 1200px;
-  height: 59px;
-  background-image: url(../img/intro-mask.svg);
+  background-color: #81b3d2;
+  background-image: url(../img/background-photo.png), url(../img/polygon.png);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom, top;
+  padding: 75px 0;
+  margin-bottom: 60px;
+}
+
+.advantage, .advantage-three-four-five, .advantage-one-detailed {
+  display: flex;
+  width: 1200px;
+  height: 256px;
 }
 
 .intro {
   width: 1200px;
   height: 216px;
+  padding-top: 61px;
   text-align: center;
-  background-position-y: -100px;
-  background-color: white;
 }
 
 .photo-bridge {
   display: inline-block;
   width: 800px;
   height: 256px;
-  background-image: url(../img/bridge.png);
-  background-size: 800px 256px;
-  background-position: center;
+  background-image: url(../img/bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .icon-1 {
@@ -88,14 +127,15 @@ header {
   display: inline-block;
   width: 800px;
   height: 256px;
-  background-image: url(../img/home.png);
+  background-image: url(../img/home.jpg);
   background-size: 100% 100%;
 }
 
-.advantage-one {
+.advantage-one, .advantage-two {
   display: inline-block;
   width: 400px;
   height: 256px;
+  margin: 0 auto;
   text-align: center;
   background-color: #81b3d2;
 }
@@ -107,31 +147,64 @@ header {
   text-align: center;
 }
 
-.advantage-two {
-  display: inline-block;
-  width: 400px;
-  height: 256px;
-  text-align: center;
-  background-color: #81b3d2;
-}
-
 .advantage-three, .advantage-four, .advantage-five {
   display: inline-block;
   width: 400px;
   height: 256px;
+  margin: 0 auto;
   text-align: center;
   background-color: #eeeeee;
 }
 
 .hotels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1200px;
   height: 256px;
   text-align: center;
+  clear: both;
 }
 
-.hotel-search {
-  display: ;
-  width: 592px;
+.hotel-chek {
+  display: flex;
+  width: 1200px;
+}
+
+.sorted {
+  display: flex;
+  width: 1200px;
+}
+
+.hotels-information {
+  display: flex;
+  width: 1200px;
+}
+
+.star-rating {
+  display: inline-block;
+}
+
+.star {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.link-hidden-form {
+  width: 568px;
+  height: 86px;
+  margin: auto;
+  background-color: #766357;
+  background-size: 568px 86px;
+  background-position: center;
+  text-align: center;
+}
+
+.search-form {
+  display: inline-block;
+  border: 1px solid black;
+  width: 568px;
   height: 419px;
   text-align: center;
 }
@@ -141,23 +214,62 @@ header {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.footer {
+.social-info {
+  display: flex;
+  justify-content: center;
   width: 1200px;
   height: 256px;
+  text-align: center;
+  clear: both;
 }
 
 .social {
-  float: left;
-  width: 290px;
-  margin-right: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 256px;
+  text-align: center;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  background-color: #618ad2;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.youtube {
+  background-image: url(../img/youtube.svg);
 }
 
 .twitter {
-  width: 46px;
-  height: 48px;
-  margin-right: 6px;
-  background: #8dbad6 url(../img/twitter.svg) no-repeat center;
+  background-image: url(../img/twitter.svg);
+}
+
+.facebook {
+  background-image: url(../img/fb-icon.svg);
+}
+
+.htmlacademy {
+  width: 115px;
+  height: 41px;
+  font-size: 0;
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
+  background-size: 115px 41px;
 }
