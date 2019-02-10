@@ -12,18 +12,21 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="navigation">Информация</a>
-      <a class="navigation">Фото и видео</a>
-      <a class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
-      </a>
-      <a class="navigation">Карта штата</a>
-      <a class="navigation" href="hotels.html">Гостиницы</a>
+      <ul class="main-menu">
+        <li class="link-navigation"><a class="navigation">Информация</a></li>
+        <li class="link-navigation"><a class="navigation">Фото и видео</a></li>
+        <li class="main-header-logo"><a>
+            <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
+          </a></li>
+        <li class="link-navigation"><a class="navigation">Карта штата</a></li>
+        <li class="link-navigation"><a class="navigation" href="hotels.html">Гостиницы</a></li>
+      </ul>
     </nav>
   </header>
   <main class="container">
     <div class="welcome">
-      <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
+      <div class="welcome-sedona"><img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona"></div>
+      <div class="polygon"><img src="img/polygon.png" width="1201" height="59" alt="polygon"></div>
     </div>
     <section class="title">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -71,7 +74,7 @@
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
-      <div class="advantage-three-four-five">
+      <div class="advantage advantage-three-four-five">
         <div class="advantage-three">
           <h3>Небольшая<br> площадь</h3>
           <p>&mdash; &#8470;3 &mdash;</p>
@@ -94,37 +97,42 @@
       <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a class="link-hidden-form" href="#">Поиск гостиницы в Седоне</a>
     </div>
-    <form class="search-form" action="/echo" method="post">
-      <div class="date-on">
-        <label for="date-on">Дата заезда:</label>
-        <input type="date" name="date-on" id="date-on" value="2017-04-24" max="2017-01-01" min="2017-12-30">
-      </div>
-      <div class="date-off">
-        <label for="date-off">Дата выезда:</label>
-        <input type="date" name="date-off" id="date-off" value="2017-07-04" max="2012-06-04" min="2017-12-30">
-      </div>
-      <div class="big">
-        <label for="number-big">Взрослые:</label>
-        <button class="minus">&#8722;</button>
-        <input type="text" id="number-big" name="number-big" value="2">
-        <button class="plus">+</button>
-      </div>
-      <div class="little">
-        <label for="number-little">Дети:</label>
-        <button class="minus">&#8722;</button>
-        <input type="text" id="number-little" name="number-little" value="0">
-        <button class="plus">+</button>
-      </div>
-      <button class="search" type="submit">Найти</button>
-    </form>
-
+    <div class="hidden-search-form">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="date-on">
+          <label for="date-on">Дата заезда:</label>
+          <input class="calendar" type="text" name="date-on" id="date-on" value="2017-04-24">
+          <button class="link-calendar"></button>
+        </div>
+        <div class="date-off">
+          <label for="date-off">Дата выезда:</label>
+          <input class="calendar" type="text" name="date-off" id="date-off" value="2017-07-04">
+          <button class="link-calendar"></button>
+        </div>
+        <div class="number-of-people">
+          <div class="big">
+            <label class="big-people" for="number-big">Взрослые:</label>
+            <button class="click-minus"></button>
+            <input class="plus-minus" type="text" id="number-big" name="number-big" value="2" size="1">
+            <button class="click-plus"></button>
+          </div>
+          <div class="little">
+            <label class="little-people" for="number-little">Дети:</label>
+            <button class="click-minus"></button>
+            <input class="plus-minus" type="text" id="number-little" name="number-little" value="0" size="1">
+            <button class="click-plus"></button>
+          </div>
+        </div>
+        <button class="search" type="submit">Найти</button>
+      </form>
+    </div>
     <div class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75148.90956663234!2d-111.82900440785752!3d34.86804939196844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1548947067727"
         width="1200px" height="400"></iframe>
     </div>
   </main>
   <footer class="social-info">
-    <div class="social"><a href="https://twitter.com">#vizitsedona</a></div>
+    <div class="social twit"><a href="https://twitter.com">#vizitsedona</a></div>
     <div class="social">
       <a class="social-btn twitter" href="https://twitter.com">tw</a>
       <a class="social-btn facebook" href="https://www.facebook.com">fb</a>
