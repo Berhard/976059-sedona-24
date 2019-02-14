@@ -15,7 +15,7 @@
       <ul class="main-menu">
         <li class="link-navigation"><a class="navigation">Информация</a></li>
         <li class="link-navigation"><a class="navigation">Фото и видео</a></li>
-        <li><a href="index.html" class="main-header-logo">
+        <li class="main-header-logo"><a href="index.html">
             <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
           </a></li>
         <li class="link-navigation"><a class="navigation">Карта штата</a></li>
@@ -29,40 +29,58 @@
       <div class="cheсk-infra-type">
         <fieldset class="infra">
           <legend>Инфраструктура</legend>
-          <label>
-            <p><input type="checkbox" checked>бассейн</p>
-          </label>
-          <label>
-            <p><input type="checkbox">парковка</p>
-          </label>
-          <label>
-            <p><input type="checkbox">wi&ndash;fi</p>
-          </label>
+          <ul>
+            <li>
+              <input class="check visually-hidden" id="pool" type="checkbox" checked>
+              <label for="pool">бассейн</label>
+            </li>
+            <li>
+              <input class="check visually-hidden" id="parking" type="checkbox">
+              <label for="parking">парковка</label>
+            </li>
+            <li>
+              <input class="check visually-hidden" id="wifi" type="checkbox">
+              <label for="wifi">wi&ndash;fi</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="type">
           <legend>Тип жилья</legend>
-          <label>
-            <p><input type="checkbox" checked>гостиница</p>
-          </label>
-          <label>
-            <p><input type="checkbox" checked>мотель</p>
-          </label>
-          <label>
-            <p><input type="checkbox" checked>аппартаменты</p>
-          </label>
+          <ul>
+            <li>
+              <input class="check visually-hidden" type="checkbox" id="hotel" checked>
+              <label for="hotel">гостиница</label>
+            </li>
+            <li>
+              <input class="check visually-hidden" type="checkbox" id="motel" checked>
+              <label for="motel"> мотель </label>
+            </li>
+            <li>
+              <input class="check visually-hidden" type="checkbox" id="appartaments" checked>
+              <label for="appartaments">аппартаменты</label>
+            </li>
+          </ul>
         </fieldset>
       </div>
       <fieldset class="cost">
         <legend>стоимость в сутки (p.)</legend>
         <div class="min-max-cost">
-          <input class="value-cost" type="text" name="cost" value="от 0">
-          <input class="value-cost" type="text" name="cost" value="до 3000">
+          <div class="value-min">
+            <label for="min">от</label>
+            <input class="value-cost" id="min" type="text" name="cost" value="0" size="2">
+          </div>
+          <div class="value-max">
+            <label for="max">до</label>
+            <input class="value-cost" id="max" type="text" name="cost" value="3000" size="2">
+          </div>
         </div>
         <div class="range">
-          <div class="toggle min-cost"></div>
-          <div class="toggle max-cost"></div>
+          <div class="toggle min-cost"><span class="visually-hidden">нижняя граница цены</span></div>
+          <hr class="line-one">
+          <div class="toggle max-cost"><span class="visually-hidden">верхняя граница цены</span></div>
+          <hr class="line-two">
         </div>
-        <input class="form-cost-btn" type="submit" id="form-cost-btn" name="form-cost-btn" value="Показать">
+        <div class="form-cost-btn"><input class="cost-btn" type="submit" id="form-cost-btn" name="form-cost-btn" value="Показать"></div>
       </fieldset>
     </form>
     <div class="sorted">
@@ -132,7 +150,6 @@
         </p>
         <div class="rating">Рейтинг: 8,9</div>
       </div>
-      </div>
     </section>
     <section class="hotels-information">
       <h2 class="visually-hidden">Аппартаменты</h2>
@@ -164,9 +181,14 @@
   <footer class="social-info">
     <div class="social twit"><a href="https://twitter.com">#vizitsedona</a></div>
     <div class="social">
-      <a class="social-btn twitter" href="https://twitter.com">tw</a>
-      <a class="social-btn facebook" href="https://www.facebook.com">fb</a>
-      <a class="social-btn youtube" href="https://www.youtube.com">yt</a>
+      <a class="social-btn twitter" href="https://twitter.com"><span class="visually-hidden">твиттер</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+          <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" /></svg>
+      </a>
+      <a class="social-btn facebook" href="https://www.facebook.com"><span class="visually-hidden">фэйсбук</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+          <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg></a>
+      <a class="social-btn youtube" href="https://www.youtube.com"><span class="visually-hidden">ютуб</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+          <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" /></svg>
+      </a>
     </div>
     <div class="social copyright">
       <b>Website by</b>
