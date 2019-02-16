@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona hotels</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -28,49 +28,49 @@
     <form class="hotel-cheсk" action="https://echo.htmlacademy.ru/echo" method="post">
       <div class="cheсk-infra-type">
         <fieldset class="infra">
-          <legend>Инфраструктура</legend>
+          <legend class="legend">Инфраструктура</legend>
           <ul>
             <li>
               <input class="check visually-hidden" id="pool" type="checkbox" checked>
-              <label for="pool">бассейн</label>
+              <label class="label" for="pool">бассейн</label>
             </li>
             <li>
               <input class="check visually-hidden" id="parking" type="checkbox">
-              <label for="parking">парковка</label>
+              <label class="label" for="parking">парковка</label>
             </li>
             <li>
               <input class="check visually-hidden" id="wifi" type="checkbox">
-              <label for="wifi">wi&ndash;fi</label>
+              <label class="label" for="wifi">wi&ndash;fi</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="type">
-          <legend>Тип жилья</legend>
+          <legend class="legend">Тип жилья</legend>
           <ul>
             <li>
               <input class="check visually-hidden" type="checkbox" id="hotel" checked>
-              <label for="hotel">гостиница</label>
+              <label class="label" for="hotel">гостиница</label>
             </li>
             <li>
               <input class="check visually-hidden" type="checkbox" id="motel" checked>
-              <label for="motel"> мотель </label>
+              <label class="label" for="motel"> мотель </label>
             </li>
             <li>
               <input class="check visually-hidden" type="checkbox" id="appartaments" checked>
-              <label for="appartaments">аппартаменты</label>
+              <label class="label" for="appartaments">аппартаменты</label>
             </li>
           </ul>
         </fieldset>
       </div>
       <fieldset class="cost">
-        <legend>стоимость в сутки (p.)</legend>
+        <legend class="legend">стоимость в сутки (p.)</legend>
         <div class="min-max-cost">
           <div class="value-min">
-            <label for="min">от</label>
+            <label class="label" for="min">от</label>
             <input class="value-cost" id="min" type="text" name="cost" value="0" size="2">
           </div>
           <div class="value-max">
-            <label for="max">до</label>
+            <label class="label" for="max">до</label>
             <input class="value-cost" id="max" type="text" name="cost" value="3000" size="2">
           </div>
         </div>

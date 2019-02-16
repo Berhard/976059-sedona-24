@@ -60,15 +60,15 @@ a {
   background-color: white;
 }
 
-legend {
+.legend {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
 }
 
-label,
+.label,
 .form-cost-btn,
-.cost-btn {
+.cost-btn {  
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -145,7 +145,6 @@ img {
 
 .check+label::after {
   content: "";
-  position: absolute;
   top: -22px;
   right: 38px;
   width: 27px;
@@ -153,16 +152,14 @@ img {
   display: block;
   position: relative;
   background: url(../img/checkbox-off.svg) no-repeat;
-  background-position: center;
-  background-size: 23px 23px;
+  background-position: left;
   cursor: pointer;
 }
 
 .check:checked+label::after {
   content: " ";
   background: url(../img/checkbox-on.svg) no-repeat;
-  background-position: center;
-  background-size: 27px 23px;
+  background-position: left;
   cursor: pointer;
 }
 
@@ -770,7 +767,7 @@ color: black;
 }
 .calendar-choice :active{
   background-color: white;
-  border-color: #e5e5e5;  
+  border-color: #e5e5e5;
 }
 .link-calendar {
   position: relative;
