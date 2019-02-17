@@ -26,42 +26,40 @@
   <main>
     <h1 class="visually-hidden">Фильтр гостиниц</h1>
     <form class="hotel-cheсk" action="https://echo.htmlacademy.ru/echo" method="post">
-      <div class="cheсk-infra-type">
-        <fieldset class="infra">
-          <legend class="legend">Инфраструктура</legend>
-          <ul>
-            <li>
-              <input class="check visually-hidden" id="pool" type="checkbox" checked>
-              <label class="label" for="pool">бассейн</label>
-            </li>
-            <li>
-              <input class="check visually-hidden" id="parking" type="checkbox">
-              <label class="label" for="parking">парковка</label>
-            </li>
-            <li>
-              <input class="check visually-hidden" id="wifi" type="checkbox">
-              <label class="label" for="wifi">wi&ndash;fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="type">
-          <legend class="legend">Тип жилья</legend>
-          <ul>
-            <li>
-              <input class="check visually-hidden" type="checkbox" id="hotel" checked>
-              <label class="label" for="hotel">гостиница</label>
-            </li>
-            <li>
-              <input class="check visually-hidden" type="checkbox" id="motel" checked>
-              <label class="label" for="motel"> мотель </label>
-            </li>
-            <li>
-              <input class="check visually-hidden" type="checkbox" id="appartaments" checked>
-              <label class="label" for="appartaments">аппартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
+      <fieldset class="infra">
+        <legend class="legend">Инфраструктура</legend>
+        <ul>
+          <li>
+            <input class="check visually-hidden" id="pool" type="checkbox" checked>
+            <label class="label" for="pool">бассейн</label>
+          </li>
+          <li>
+            <input class="check visually-hidden" id="parking" type="checkbox">
+            <label class="label" for="parking">парковка</label>
+          </li>
+          <li>
+            <input class="check visually-hidden" id="wifi" type="checkbox">
+            <label class="label" for="wifi">wi&ndash;fi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="type">
+        <legend class="legend">Тип жилья</legend>
+        <ul>
+          <li>
+            <input class="check visually-hidden" type="checkbox" id="hotel" checked>
+            <label class="label" for="hotel">гостиница</label>
+          </li>
+          <li>
+            <input class="check visually-hidden" type="checkbox" id="motel" checked>
+            <label class="label" for="motel"> мотель </label>
+          </li>
+          <li>
+            <input class="check visually-hidden" type="checkbox" id="appartaments" checked>
+            <label class="label" for="appartaments">аппартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
       <fieldset class="cost">
         <legend class="legend">стоимость в сутки (p.)</legend>
         <div class="min-max-cost">
@@ -99,7 +97,7 @@
     <section class="hotels-information">
       <h2 class="visually-hidden">Гостиница</h2>
       <div class="all-hotel-information">
-        <div class="hotel-photo1"></div>
+        <div class="hotel-photo1"><img src="img/amara.jpg" alt="фото Amara Resort"></div>
         <div class="information">
           <b class="hotel-link"><a href="#">Amara Resort &amp; Spa</a></b>
           <div class="info-detail-price">
@@ -115,19 +113,19 @@
         </div>
       </div>
       <div class="star-rating">
-        <p class="stars">
+        <div class="stars">
           <span class="star">star</span>
           <span class="star">star</span>
           <span class="star">star</span>
           <span class="star">star</span>
-        </p>
+        </div>
         <div class="rating">Рейтинг: 8,5</div>
       </div>
     </section>
     <section class="hotels-information">
       <h2 class="visually-hidden">Мотель</h2>
       <div class="all-hotel-information">
-        <div class="hotel-photo2"></div>
+        <div class="hotel-photo2"><img src="img/desert.jpg" alt="фото Desert Quail Inn"></div>
         <div class="information">
           <b class="hotel-link"><a href="#">Desert Quail Inn</a></b>
           <div class="info-detail-price">
@@ -143,18 +141,18 @@
         </div>
       </div>
       <div class="star-rating">
-        <p class="stars">
+        <div class="stars">
           <span class="star">star</span>
           <span class="star">star</span>
           <span class="star">star</span>
-        </p>
+        </div>
         <div class="rating">Рейтинг: 8,9</div>
       </div>
     </section>
     <section class="hotels-information">
       <h2 class="visually-hidden">Аппартаменты</h2>
       <div class="all-hotel-information">
-        <div class="hotel-photo3"></div>
+        <div class="hotel-photo3"><img src="img/villas.jpg" alt="фото Villas at Poco Diablo"></div>
         <div class="information">
           <b class="hotel-link"><a href="#">Villas at Poco Diablo</a></b>
           <div class="info-detail-price">
@@ -170,10 +168,10 @@
         </div>
       </div>
       <div class="star-rating">
-        <p class="stars">
+        <div class="stars">
           <span class="star">star</span>
           <span class="star">star</span>
-        </p>
+        </div>
         <div class="rating">Рейтинг: 9,2</div>
       </div>
     </section>

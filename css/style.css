@@ -24,6 +24,9 @@ a {
   right: 0;
   margin: auto;
 }
+.main-header-logo a {
+  height: 72px;
+}
 
 .main-menu {
   margin: 0;
@@ -163,7 +166,6 @@ img {
   cursor: pointer;
 }
 
-
 .hotels a {
   color: white;
   font-size: 21px;
@@ -252,11 +254,6 @@ img {
 .welcome-sedona {
   margin-top: 71px;
   margin-bottom: 22px;
-}
-
-.cheсk-infra-type {
-  display: flex;
-  margin-left: 72px;
 }
 
 .polygon {
@@ -381,7 +378,6 @@ img {
   background-image: url(../img/background-hotels.jpg);
   background-position: center;
   display: flex;
-  justify-content: space-between;
   width: 1200px;
   color: white;
   padding-top: 40px;
@@ -398,11 +394,19 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+.infra,
+.type {
+  width: 146px;
+}
+.infra {
+  margin-left: 73px;
+}
 .type {
   margin-left: 115px;
 }
+
 .cost {
-  padding-right: 73px;
+  margin-left: 276px;
 }
 
 .value-cost {
@@ -555,28 +559,12 @@ fieldset {
   line-height: 18px;
 }
 
-.hotel-photo1 {
-  width: 135px;
-  background-image: url(../img/amara.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.hotel-photo2 {
-  width: 135px;
-  background-image: url(../img/desert.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
+.hotel-photo1,
+.hotel-photo2,
 .hotel-photo3 {
+  display: flex;
+  align-items: center;
   width: 135px;
-  background-image: url(../img/villas.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .hotel-name,
@@ -593,7 +581,7 @@ fieldset {
   font-weight: bold;
 }
 
-.finded span{
+.finded span {
   font-size: 21px;
   line-height: 26px;
 }
@@ -604,7 +592,6 @@ fieldset {
   margin-top: 30px;
   margin-bottom: 30px;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -619,7 +606,10 @@ fieldset {
   background-repeat: no-repeat;
   font-size: 0;
 }
-
+.stars {
+  display:flex;
+  justify-content: flex-end;
+}
 .arrow-sorted {
   padding-right: 73px;
 }
@@ -731,20 +721,16 @@ fieldset {
 
 .date-on,
 .date-off {
-display: flex;
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
 }
 
-.date-on a,
-.date-off a {
-color: black;
-}
 .calendar-choice {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
-
 
 .choice-date {
   display: flex;
@@ -756,21 +742,24 @@ color: black;
   border-collapse: collapse;
   cursor: pointer;
 }
-.date-label-off {
-  margin-right: 15px;
-}
+
+.date-label-off,
 .date-label-on {
-  margin-right: 17px;
+  width: 97px;
+  margin-right: 14px;
 }
+
 .calendar-choise:hover,
-.calendar-choise:focus{
+.calendar-choise:focus {
   background-color: #ebebeb;
   border-color: #ebebeb;
 }
-.calendar-choice :active{
+
+.calendar-choice :active {
   background-color: white;
   border-color: #e5e5e5;
 }
+
 .link-calendar {
   position: relative;
   width: 38px;
@@ -802,11 +791,11 @@ color: black;
 
 .calendar {
   height: 38px;
+  width: 100%;
   text-align: left;
   border: none;
   outline: none;
   background-color: inherit;
-
 }
 
 .big,
@@ -890,6 +879,7 @@ color: black;
 
 .all-hotel-information {
   display: flex;
+  align-items: center;
   margin-left: 72px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -950,7 +940,7 @@ color: black;
   font-weight: 700;
   text-align: left;
   background-color: #fff;
-      box-shadow: 0 10px 10px 5px rgba(0,0,0,.1);
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, .1);
 }
 
 .date-on {
@@ -1047,8 +1037,8 @@ color: black;
 
 .social-btn {
   display: flex;
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   margin: 6px;
@@ -1056,6 +1046,7 @@ color: black;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .social-btn:hover,
 .social-btn:focus {
   background-color: #669ec0;
@@ -1065,6 +1056,7 @@ color: black;
 .social-btn:focus path {
   fill: #ffffff;
 }
+
 .social-btn:active {
   background-color: #669ec0;
 }
@@ -1072,6 +1064,7 @@ color: black;
 .social-btn:focus path {
   opacity: 0.5;
 }
+
 .htmlacademy {
   width: 115px;
   height: 41px;
