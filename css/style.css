@@ -399,7 +399,7 @@ fieldset {
   width: 146px;
 }
 .infra {
-  margin-left: 73px;
+  margin-left: 61px;
 }
 .type {
   margin-left: 115px;
@@ -880,7 +880,7 @@ fieldset {
 .all-hotel-information {
   display: flex;
   align-items: center;
-  margin-left: 72px;
+  margin-left: 73px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
