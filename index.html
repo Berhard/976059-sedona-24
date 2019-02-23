@@ -106,7 +106,7 @@
           <div class="calendar-choice">
             <div class="date-label-on"><label for="date_on">Дата заезда:</label></div>
             <div class="choice-date">
-              <input class="calendar" type="text" name="date_on" id="date-on" value="24 апреля 2017" required pattern="\d+(\.\d{2})?">
+              <input class="calendar" type="text" name="date_on" id="date-on" value="24 апреля 2017" required>
               <a class="link-calendar"><span class="visually-hidden">календарь</span></a>
             </div>
           </div>
@@ -115,7 +115,7 @@
           <div class="calendar-choice">
             <div class="date-label-off"><label for="date-off">Дата выезда:</label></div>
             <div class="choice-date">
-              <input class="calendar" type="text" name="date_off" id="date_off" value="4 июля 2017" required pattern="\d+(\.\d{2})?">
+              <input class="calendar" type="text" name="date_off" id="date_off" value="4 июля 2017" required>
               <a class="link-calendar"><span class="visually-hidden">календарь</span></a>
             </div>
           </div>
@@ -161,10 +161,21 @@
   <script>
     var link = document.querySelector(".link-hidden-form");
     var popup = document.querySelector(".hidden-search-form");
+     var dateon = popup.querySelector("[name=date_on]")
+
     link.addEventListener("click", function(evt) {
       evt.preventDefault();
       popup.classList.toggle("modal-show");
+      dateon.focus();
     });
+    window.addEventListener("keydown", function (evt) {
+   if (evt.keyCode === 27) {
+     evt.preventDefault();
+     if (popup.classList.contains("modal-show")) {
+       popup.classList.remove("modal-show");
+     }
+   }
+ });
   </script>
 </body>
 

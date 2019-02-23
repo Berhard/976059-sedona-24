@@ -72,14 +72,13 @@ a {
 .map-navigation a {
   margin-left: 2px;
   letter-spacing: 0.04em;
-  font-stretch:condensed;
-
+  font-stretch: condensed;
 }
 
 .hotels-navigation a {
   margin-left: 17px;
   letter-spacing: 0.005em;
-    font-stretch:condensed;
+  font-stretch: condensed;
 }
 
 .link-navigation {
@@ -105,7 +104,7 @@ a {
   font-weight: bold;
   line-height: 21px;
   margin-bottom: 11px;
-  font-stretch:condensed;
+  font-stretch: condensed;
   letter-spacing: 0.005em;
 }
 
@@ -157,7 +156,6 @@ a {
   letter-spacing: 0.001em;
   font-stretch: condensed;
   margin-left: -2px;
-
 }
 
 .advantage-one-detailed b {
@@ -204,9 +202,11 @@ img {
   display: flex;
   margin-bottom: 1.6px;
 }
+
 .type-of-housing {
   margin-left: 3px;
 }
+
 .check+label::after {
   content: "";
   top: -22px;
@@ -260,7 +260,7 @@ img {
   background: transparent;
   border: 0;
   font-weight: normal;
-  font-stretch:condensed;
+  font-stretch: condensed;
   letter-spacing: 0.05em;
 }
 
@@ -660,6 +660,7 @@ fieldset {
   font-weight: normal;
   padding-bottom: 14px;
 }
+
 .hotel-name-villas,
 .hotel-price-villas {
   padding-bottom: 13px;
@@ -675,13 +676,16 @@ fieldset {
   line-height: 21px;
   font-weight: bold;
 }
+
 .amara {
   letter-spacing: 0.02em;
 }
-.villas{
+
+.villas {
   letter-spacing: 0.015em;
   margin-top: -1px;
 }
+
 .finded {
   font-size: 21px;
   line-height: 26px;
@@ -869,9 +873,11 @@ fieldset {
   letter-spacing: 0.04em;
   font-stretch: normal;
 }
-.date-label-off{
+
+.date-label-off {
   margin-top: -2px;
 }
+
 .choice-date:hover,
 .choice-date:focus {
   background-color: #ebebeb;
@@ -925,7 +931,7 @@ fieldset {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.05em;
-    font-stretch:semi-condensed;
+  font-stretch: semi-condensed;
 }
 
 .big,
@@ -1067,7 +1073,7 @@ fieldset {
   color: #766860;
 }
 
-.hidden-a-form {
+.hidden-search-form {
   display: none;
   width: 1200px;
 }
@@ -1098,6 +1104,7 @@ fieldset {
 .big {
   margin-right: 30px;
 }
+
 .date_off,
 .number-of-people {
   margin-left: 55px;
@@ -1233,6 +1240,29 @@ fieldset {
   background-repeat: no-repeat;
   background-size: 115px 41px;
 }
+
 .modal-show {
   display: block;
+  animation: bounce 0.2s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
