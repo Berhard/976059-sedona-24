@@ -7,20 +7,21 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="main-menu">
-        <li class="link-navigation"><a class="navigation">Информация</a></li>
-        <li class="link-navigation"><a class="navigation">Фото и видео</a></li>
-        <li class="main-header-logo"><a>
-            <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
-          </a></li>
-        <li class="link-navigation"><a class="navigation">Карта штата</a></li>
-        <li class="link-navigation"><a class="navigation" href="hotels.html">Гостиницы</a></li>
+        <li class="link-navigation info-navigation"><a class="navigation">Информация</a></li>
+        <li class="link-navigation photo-navigation"><a class="navigation">Фото и видео</a></li>
+        <li class="link-navigation map-navigation"><a class="navigation">Карта штата</a></li>
+        <li class="link-navigation hotels-navigation"><a class="navigation" href="hotels.html">Гостиницы</a></li>
       </ul>
+      <div class="main-header-logo"><a>
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
+        </a></div>
     </nav>
   </header>
   <main class="container">
@@ -45,24 +46,24 @@
         <div class="advantage-one">
           <h3>Настоящий<br> городок</h3>
           <p>&mdash; &#8470;1 &mdash;</p>
-          <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
+          <p>Седона &mdash; не аттракцион для туристов,<br> там течет своя жизнь</p>
         </div>
         <div class="photo-home"></div>
       </div>
       <div class="advantage-one-detailed">
         <div class="advantage-one-home">
           <div class="icon-1"></div>
-          <b>Жилье</b>
+          <b class="home">Жильё</b>
           <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
         </div>
         <div class="advantage-one-food">
           <div class="icon-3"></div>
-          <b>Еда</b>
+          <b class="food">Еда</b>
           <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
         </div>
         <div class="advantage-one-present">
           <div class="icon-2"></div>
-          <b>Сувениры!</b>
+          <b class="present">Сувениры</b>
           <p>Не только китайского, но и местного<br> производства!</p>
         </div>
       </div>
@@ -71,14 +72,14 @@
         <div class="advantage-two">
           <h3>Там есть<br> мост дьявола</h3>
           <p>&mdash; &#8470;2 &mdash;</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
         </div>
       </div>
       <div class="advantage advantage-three-four-five">
         <div class="advantage-three">
           <h3>Небольшая<br> площадь</h3>
           <p>&mdash; &#8470;3 &mdash;</p>
-          <p>все достопримечательности<br> находятся близко</p>
+          <p>все достопримечательности<br> находятся очень близко</p>
         </div>
         <div class="advantage-four">
           <h3>Красивая<br> дорога</h3>
@@ -88,7 +89,7 @@
         <div class="advantage-five">
           <h3>Мало<br> туристов</h3>
           <p>&mdash; &#8470;5 &mdash;</p>
-          <p>большинство едет в Гранд Каньонн<br> и толпится там</p>
+          <p>большинство едет в Гранд Каньон<br> и толпится там</p>
         </div>
       </div>
     </section>
@@ -96,25 +97,25 @@
       <b>Заинтересовались?</b>
       <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <div class="link-hidden-form">
-        <a class="link-hidden" href="#">Поиск гостиницы в Седоне</a>
+        <a class="link-hidden">Поиск гостиницы в Седоне</a>
       </div>
     </div>
     <div class="hidden-search-form">
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="date-on">
+        <div class="date_on">
           <div class="calendar-choice">
-            <div class="date-label-on"><label for="date-on">Дата заезда:</label></div>
+            <div class="date-label-on"><label for="date_on">Дата заезда:</label></div>
             <div class="choice-date">
-              <input class="calendar" type="date" name="date-on" id="date-on" value="2017-04-24">
+              <input class="calendar" type="text" name="date_on" id="date-on" value="24 апреля 2017" required pattern="\d+(\.\d{2})?">
               <a class="link-calendar"><span class="visually-hidden">календарь</span></a>
             </div>
           </div>
         </div>
-        <div class="date-off">
+        <div class="date_off">
           <div class="calendar-choice">
             <div class="date-label-off"><label for="date-off">Дата выезда:</label></div>
             <div class="choice-date">
-              <input class="calendar" type="date" name="date-off" id="date-off" value="2017-07-04">
+              <input class="calendar" type="text" name="date_off" id="date_off" value="4 июля 2017" required pattern="\d+(\.\d{2})?">
               <a class="link-calendar"><span class="visually-hidden">календарь</span></a>
             </div>
           </div>
@@ -123,17 +124,17 @@
           <div class="big">
             <label class="big-people" for="number-big">Взрослые:</label>
             <button class="click-minus"></button>
-            <input class="plus-minus" type="text" id="number-big" name="number-big" value="2" size="1">
+            <input class="plus-minus" type="text" id="number_big" name="number_big" value="2" size="1" required pattern="^[ 0-9]+$">
             <button class="click-plus"></button>
           </div>
           <div class="little">
-            <label class="little-people" for="number-little">Дети:</label>
+            <label class="little-people" for="number_little">Дети:</label>
             <button class="click-minus"></button>
-            <input class="plus-minus" type="text" id="number-little" name="number-little" value="0" size="1">
+            <input class="plus-minus" type="text" id="number_little" name="number_little" value="0" size="1" required pattern="^[ 0-9]+$">
             <button class="click-plus"></button>
           </div>
         </div>
-        <button class="search" type="submit">Найти</button>
+        <button class="search" type="submit" required>Найти</button>
       </form>
     </div>
     <div class="map">
@@ -141,7 +142,7 @@
     </div>
   </main>
   <footer class="social-info">
-    <div class="social twit"><a href="https://twitter.com">#vizitsedona</a></div>
+    <div class="social twit"><a href="https://twitter.com">#visitsedona</a></div>
     <div class="social">
       <a class="social-btn twitter" href="https://twitter.com"><span class="visually-hidden">твиттер</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
           <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" /></svg>
@@ -157,6 +158,14 @@
       <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
     </div>
   </footer>
+  <script>
+    var link = document.querySelector(".link-hidden-form");
+    var popup = document.querySelector(".hidden-search-form");
+    link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.toggle("modal-show");
+    });
+  </script>
 </body>
 
 </html>

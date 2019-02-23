@@ -13,21 +13,21 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="main-menu">
-        <li class="link-navigation"><a class="navigation">Информация</a></li>
-        <li class="link-navigation"><a class="navigation">Фото и видео</a></li>
-        <li class="main-header-logo"><a href="index.html">
-            <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
-          </a></li>
-        <li class="link-navigation"><a class="navigation">Карта штата</a></li>
-        <li class="link-navigation"><a class="navigation">Гостиницы</a></li>
+        <li class="link-navigation info-navigation"><a class="navigation">Информация</a></li>
+        <li class="link-navigation photo-navigation"><a class="navigation">Фото и видео</a></li>
+        <li class="link-navigation map-navigation"><a class="navigation">Карта штата</a></li>
+        <li class="link-navigation hotels-navigation"><a class="navigation">Гостиницы</a></li>
       </ul>
+      <div class="main-header-logo"><a href="index.html">
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
+        </a></div>
     </nav>
   </header>
   <main>
     <h1 class="visually-hidden">Фильтр гостиниц</h1>
     <form class="hotel-cheсk" action="https://echo.htmlacademy.ru/echo" method="post">
       <fieldset class="infra">
-        <legend class="legend">Инфраструктура</legend>
+        <legend class="legend">Инфраструктура:</legend>
         <ul>
           <li>
             <input class="check visually-hidden" id="pool" type="checkbox" checked>
@@ -44,31 +44,31 @@
         </ul>
       </fieldset>
       <fieldset class="type">
-        <legend class="legend">Тип жилья</legend>
+        <legend class="legend">Тип жилья:</legend>
         <ul>
           <li>
             <input class="check visually-hidden" type="checkbox" id="hotel" checked>
-            <label class="label" for="hotel">гостиница</label>
+            <label class="label" for="hotel"><span class="type-of-housing">гостиница</span></label>
           </li>
           <li>
             <input class="check visually-hidden" type="checkbox" id="motel" checked>
-            <label class="label" for="motel"> мотель </label>
+            <label class="label" for="motel"><span class="type-of-housing">мотель</span></label>
           </li>
           <li>
             <input class="check visually-hidden" type="checkbox" id="appartaments" checked>
-            <label class="label" for="appartaments">аппартаменты</label>
+            <label class="label" for="appartaments"><span class="type-of-housing">апартаменты</span></label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="cost">
-        <legend class="legend">стоимость в сутки (p.)</legend>
+        <legend class="legend">стоимость в сутки (p):</legend>
         <div class="min-max-cost">
           <div class="value-min">
-            <label class="label" for="min">от</label>
+            <label class="label value-against" for="min">от</label>
             <input class="value-cost" id="min" type="text" name="cost" value="0" size="2">
           </div>
           <div class="value-max">
-            <label class="label" for="max">до</label>
+            <label class="label value-until" for="max">до</label>
             <input class="value-cost" id="max" type="text" name="cost" value="3000" size="2">
           </div>
         </div>
@@ -83,7 +83,7 @@
     </form>
     <div class="sorted">
       <div class="type-sorted">
-        <span class="Finded">Найдено: 3</span>
+        <span class="finded">Найдено: 3</span>
         <span class="filtred">Сортировка:</span>
         <span><a class="sort-prise" href="#">По цене</a></span>
         <span><a class="sort" href="#">По типу</a></span>
@@ -94,19 +94,19 @@
         <a href="#" class="arrow down">вниз</a>
       </div>
     </div>
-    <section class="hotels-information">
+    <section class="hotels-information hotel-amara">
       <h2 class="visually-hidden">Гостиница</h2>
       <div class="all-hotel-information">
-        <div class="hotel-photo1"><img src="img/amara.jpg" alt="фото Amara Resort"></div>
+        <div class="hotel-photo1"><img src="img/amara.jpg" width="135px" height="90px" alt="фото Amara Resort"></div>
         <div class="information">
-          <b class="hotel-link"><a href="#">Amara Resort &amp; Spa</a></b>
+          <b class="hotel-link amara"><a href="#">Amara Resort &amp; Spa</a></b>
           <div class="info-detail-price">
             <div class="info-detail">
-              <span class="hotel-name">Гостиница</span>
+              <span class="hotel-name hotel-name-amara">Гостиница</span>
               <a class="detailed" href="#">Подробнее</a>
             </div>
             <div class="hotels-price">
-              <span class="hotel-price">от 4000 р.</span>
+              <span class="hotel-price hotel-price-amara">от 4000 р.</span>
               <a class="book" href="#">Забронировать</a>
             </div>
           </div>
@@ -122,19 +122,19 @@
         <div class="rating">Рейтинг: 8,5</div>
       </div>
     </section>
-    <section class="hotels-information">
+    <section class="hotels-information hotel-desert">
       <h2 class="visually-hidden">Мотель</h2>
       <div class="all-hotel-information">
-        <div class="hotel-photo2"><img src="img/desert.jpg" alt="фото Desert Quail Inn"></div>
+        <div class="hotel-photo2"><img src="img/desert.jpg" width="135px" height="90px" alt="фото Desert Quail Inn"></div>
         <div class="information">
-          <b class="hotel-link"><a href="#">Desert Quail Inn</a></b>
+          <b class="hotel-link desert"><a href="#">Desert Quail Inn</a></b>
           <div class="info-detail-price">
             <div class="info-detail">
-              <span class="hotel-name">Мотель</span>
+              <span class="hotel-name hotel-name-desert">Мотель</span>
               <a class="detailed" href="#">Подробнее</a>
             </div>
             <div class="hotels-price">
-              <span class="hotel-price">от 3000 р.</span>
+              <span class="hotel-price hotel-price-desert">от 3000 р.</span>
               <a class="book" href="#">Забронировать</a>
             </div>
           </div>
@@ -149,19 +149,19 @@
         <div class="rating">Рейтинг: 8,9</div>
       </div>
     </section>
-    <section class="hotels-information">
-      <h2 class="visually-hidden">Аппартаменты</h2>
+    <section class="hotels-information hotel-villas">
+      <h2 class="visually-hidden">Апартаменты</h2>
       <div class="all-hotel-information">
-        <div class="hotel-photo3"><img src="img/villas.jpg" alt="фото Villas at Poco Diablo"></div>
+        <div class="hotel-photo3"><img src="img/villas.jpg" width="135px" height="90px" alt="фото Villas at Poco Diablo"></div>
         <div class="information">
-          <b class="hotel-link"><a href="#">Villas at Poco Diablo</a></b>
+          <b class="hotel-link villas"><a href="#">Villas at Poco Diablo</a></b>
           <div class="info-detail-price">
             <div class="info-detail">
-              <span class="hotel-name">Апартаменты</span>
+              <span class="hotel-name hotel-name-villas">Апартаменты</span>
               <a class="detailed" href="#">Подробнее</a>
             </div>
             <div class="hotels-price">
-              <span class="hotel-price">от 2000 р.</span>
+              <span class="hotel-price hotel-price-villas">от 2000 р.</span>
               <a class="book" href="#">Забронировать</a>
             </div>
           </div>
@@ -177,7 +177,7 @@
     </section>
   </main>
   <footer class="social-info">
-    <div class="social twit"><a href="https://twitter.com">#vizitsedona</a></div>
+    <div class="social twit"><a href="https://twitter.com">#visitsedona</a></div>
     <div class="social">
       <a class="social-btn twitter" href="https://twitter.com"><span class="visually-hidden">твиттер</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
           <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" /></svg>
