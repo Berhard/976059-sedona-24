@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Sedona hotels</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
@@ -30,9 +30,9 @@
     </div>
     <section class="title">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      
+
       <div class="intro">
-        <b>Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</b>
+        <b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </div>
     </section>
@@ -40,52 +40,52 @@
       <h2 class="visually-hidden">Преимущества Седоны</h2>
       <div class="advantage">
         <div class="advantage-one">
-          <h3>Настоящий<br> городок</h3>
+          <h3>Настоящий городок</h3>
           <p>&mdash; &#8470;1 &mdash;</p>
-          <p>Седона &mdash; не аттракцион для туристов,<br> там течет своя жизнь</p>
+          <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="photo-home"></div>
+        <div class="photo-home"><span class="visually-hidden">Фото гостиницы</span></div>
       </div>
       <div class="advantage-one-detailed">
         <div class="advantage-one-home">
           <div class="icon-1"></div>
           <b class="home">Жильё</b>
-          <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
         <div class="advantage-one-food">
           <div class="icon-3"></div>
           <b class="food">Еда</b>
-          <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="advantage-one-present">
           <div class="icon-2"></div>
           <b class="present">Сувениры</b>
-          <p>Не только китайского, но и местного<br> производства!</p>
+          <p>Не только китайского, но и местного производства!</p>
         </div>
       </div>
       <div class="advantage">
-        <div class="photo-bridge"></div>
+        <div class="photo-bridge"><span class="visually-hidden">Фото моста дьявола</span></div>
         <div class="advantage-two">
           <h3>Там есть<br> мост дьявола</h3>
           <p>&mdash; &#8470;2 &mdash;</p>
-          <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
       <div class="advantage advantage-three-four-five">
         <div class="advantage-three">
-          <h3>Небольшая<br> площадь</h3>
+          <h3>Небольшая площадь</h3>
           <p>&mdash; &#8470;3 &mdash;</p>
-          <p>все достопримечательности<br> находятся очень близко</p>
+          <p>все достопримечательности находятся очень близко</p>
         </div>
         <div class="advantage-four">
-          <h3>Красивая<br> дорога</h3>
+          <h3>Красивая дорога</h3>
           <p>&mdash; &#8470;4 &mdash;</p>
-          <p>ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+          <p>ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="advantage-five">
-          <h3>Мало<br> туристов</h3>
+          <h3>Мало туристов</h3>
           <p>&mdash; &#8470;5 &mdash;</p>
-          <p>большинство едет в Гранд Каньон<br> и толпится там</p>
+          <p>большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </div>
     </section>
@@ -102,35 +102,39 @@
           <div class="calendar-choice">
             <div class="date-label-on"><label for="date_on">Дата заезда:</label></div>
             <div class="choice-date">
-              <input class="calendar" type="text" name="date_on" id="date-on" value="24 апреля 2017" required>
+              <input class="calendar" type="text" name="date_on" id="date_on" placeholder="24 апреля 2017" required>
               <a class="link-calendar"><span class="visually-hidden">календарь</span></a>
             </div>
           </div>
         </div>
         <div class="date_off">
           <div class="calendar-choice">
-            <div class="date-label-off"><label for="date-off">Дата выезда:</label></div>
+            <div class="date-label-off"><label for="date_off">Дата выезда:</label></div>
             <div class="choice-date">
-              <input class="calendar" type="text" name="date_off" id="date_off" value="4 июля 2017" required>
+              <input class="calendar" type="text" name="date_off" id="date_off" placeholder="4 июля 2017" required>
               <a class="link-calendar"><span class="visually-hidden">календарь</span></a>
             </div>
           </div>
         </div>
         <div class="number-of-people">
           <div class="big">
-            <label class="big-people" for="number-big">Взрослые:</label>
-            <button class="click-minus"></button>
-            <input class="plus-minus" type="text" id="number_big" name="number_big" value="2" size="1" required pattern="^[ 0-9]+$">
-            <button class="click-plus"></button>
+            <label class="big-people" for="number_big">Взрослые:</label>
+            <div class="click-plus-minus big-people-value">
+              <button class="click-minus"></button>
+              <input class="plus-minus" type="text" id="number_big" name="number_big" value="2" size="1" required pattern="^[ 0-9]+$">
+              <button class="click-plus"></button>
+            </div>
           </div>
           <div class="little">
             <label class="little-people" for="number_little">Дети:</label>
-            <button class="click-minus"></button>
-            <input class="plus-minus" type="text" id="number_little" name="number_little" value="0" size="1" required pattern="^[ 0-9]+$">
-            <button class="click-plus"></button>
+            <div class="click-plus-minus">
+              <button class="click-minus"></button>
+              <input class="plus-minus" type="text" id="number_little" name="number_little" value="0" size="1" required pattern="^[ 0-9]+$">
+              <button class="click-plus"></button>
+            </div>
           </div>
         </div>
-        <button class="search" type="submit" required>Найти</button>
+        <button class="search" type="submit">Найти</button>
       </form>
     </div>
     <div class="map">
