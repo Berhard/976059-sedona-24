@@ -49,6 +49,7 @@ a {
   bottom: 0;
   left: 50%;
   margin-left: -70px;
+  height: 74px;
 }
 
 .main-header-logo a {
@@ -1112,11 +1113,7 @@ fieldset {
   margin-right: 34px;
 }
 
-.sort:focus {
-  color: #9fc4db;
-  border-bottom: 1px dashed #9fc4db;
-}
-
+.sort:focus,
 .sort:hover {
   color: #9fc4db;
   border-bottom: 1px dashed #9fc4db;
