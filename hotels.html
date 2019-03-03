@@ -13,10 +13,10 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="main-menu">
-        <li class="link-navigation info-navigation"><a class="navigation">Информация</a></li>
-        <li class="link-navigation photo-navigation"><a class="navigation">Фото и видео</a></li>
-        <li class="link-navigation map-navigation"><a class="navigation">Карта штата</a></li>
-        <li class="link-navigation hotels-navigation"><a class="navigation">Гостиницы</a></li>
+        <li class="link-navigation info-navigation"><a href="#" class="navigation">Информация</a></li>
+        <li class="link-navigation photo-navigation"><a href="#" class="navigation">Фото и видео</a></li>
+        <li class="link-navigation map-navigation"><a href="#" class="navigation">Карта штата</a></li>
+        <li class="link-navigation hotels-navigation"><a href="#" class="navigation">Гостиницы</a></li>
       </ul>
       <div class="main-header-logo"><a href="index.html">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
@@ -26,42 +26,42 @@
   <main>
     <h1 class="visually-hidden">Фильтр гостиниц</h1>
     <form class="hotel-check" action="https://echo.htmlacademy.ru/echo" method="post">
-      <fieldset class="infra">
-        <legend class="legend">Инфраструктура:</legend>
+      <div class="infra">
+        <h3 class="legend">Инфраструктура:</h3>
         <ul>
           <li>
             <input class="check visually-hidden" id="pool" type="checkbox" checked>
-            <label class="label" for="pool">бассейн</label>
+            <label class="label" for="pool" tabindex="0">бассейн</label>
           </li>
           <li>
             <input class="check visually-hidden" id="parking" type="checkbox">
-            <label class="label" for="parking">парковка</label>
+            <label class="label" for="parking" tabindex="0">парковка</label>
           </li>
           <li>
             <input class="check visually-hidden" id="wifi" type="checkbox">
-            <label class="label" for="wifi">wi-fi</label>
+            <label class="label" for="wifi" tabindex="0">wi-fi</label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="type">
-        <legend class="legend">Тип жилья:</legend>
+      </div>
+      <div class="type">
+        <h3 class="legend">Тип жилья:</h3>
         <ul>
           <li>
             <input class="check visually-hidden" type="checkbox" id="hotel" checked>
-            <label class="label" for="hotel"><span class="type-of-housing">гостиница</span></label>
+            <label class="label" for="hotel" tabindex="0"><span class="type-of-housing">гостиница</span></label>
           </li>
           <li>
             <input class="check visually-hidden" type="checkbox" id="motel" checked>
-            <label class="label" for="motel"><span class="type-of-housing">мотель</span></label>
+            <label class="label" for="motel" tabindex="0"><span class="type-of-housing">мотель</span></label>
           </li>
           <li>
             <input class="check visually-hidden" type="checkbox" id="appartaments" checked>
-            <label class="label" for="appartaments"><span class="type-of-housing">апартаменты</span></label>
+            <label class="label" for="appartaments" tabindex="0"><span class="type-of-housing">апартаменты</span></label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="cost">
-        <legend class="legend">стоимость в сутки (p):</legend>
+      </div>
+      <div class="cost">
+        <h3 class="legend">стоимость в сутки (p):</h3>
         <div class="min-max-cost">
           <div class="value-min">
             <label class="label value-against" for="min">от</label>
@@ -79,7 +79,7 @@
           <hr class="line-two">
         </div>
         <div class="form-cost-btn"><input class="cost-btn" type="submit" id="form-cost-btn" name="form-cost-btn" value="Показать"></div>
-      </fieldset>
+      </div>
     </form>
     <div class="sorted">
       <div class="type-sorted">
@@ -90,8 +90,8 @@
         <span><a class="sort" href="#">По рейтингу</a></span>
       </div>
       <div class="arrow-sorted">
-        <a href="#" class="arrow up">вверх</a>
-        <a href="#" class="arrow down">вниз</a>
+        <a href="#" class="arrow up"><span class="visually-hidden">стрелка вверх</span>вверх</a>
+        <a href="#" class="arrow down"><span class="visually-hidden">стрелка вниз</span></a>
       </div>
     </div>
     <section class="hotels-information hotel-amara">

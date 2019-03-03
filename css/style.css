@@ -154,24 +154,24 @@ a {
   background-image: url(../img/background-photo.jpg);
   background-repeat: no-repeat;
   background-position: center -56px;
+  background-color: #d4e5ef;
 }
 
-.welcome-sedona {
+.welcome img {
   margin-left: 370px;
   padding-top: 77px;
 }
 
-.welcome-sedona::after {
+.welcome::after {
   content: "";
   display: block;
+  position: absolute;
   height: 60px;
   width: 1203px;
   background-image: url(../img/polygon.svg);
   background-repeat: no-repeat;
-  margin-left: -371px;
-  margin-top: 15px;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  top: 508px;
+  left: 158.5px;
 }
 
 .title {
@@ -182,8 +182,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
-  min-height: 214px;
-  margin-top: -3px;
+  min-height: 216px;
   background-color: white;
 }
 
@@ -196,13 +195,13 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 500px;
-  min-height: 214px;
+  min-height: 216px;
   text-align: center;
   background-color: white;
 }
 
 .intro b {
-  margin-top: 58px;
+  margin-top: 60px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -222,6 +221,11 @@ a {
   font-weight: bold;
   margin-left: 120px;
   margin-right: 120px;
+}
+
+.advantage-five h3 {
+  margin-left: 124px;
+  margin-right: 124px;
 }
 
 .advantage p {
@@ -287,19 +291,12 @@ a {
   margin-right: 46px;
 }
 
-.advantage-one-detailed p {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  letter-spacing: 0.007em;
-  font-stretch: condensed;
-}
-
 .advantage-one-detailed b {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
   letter-spacing: 0.008px;
+  margin-top: 161px;
 }
 
 .advantage-one-detailed p {
@@ -335,37 +332,40 @@ a {
   margin-top: 24px;
 }
 
-.icon-1 {
-  width: 74px;
+.advantage-one-home::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 76px;
   height: 71px;
+  margin-left: 162px;
   margin-top: 61px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
   background-image: url(../img/icon-1.svg);
-  background-size: 74px 71px;
+  background-size: 76px 71px;
   background-repeat: no-repeat;
 }
 
-.icon-2 {
+.advantage-one-present::after {
+  content: "";
+  position: absolute;
+  display: block;
   width: 64px;
   height: 76px;
+  margin-left: 168px;
   margin-top: 56px;
-  margin-bottom: 29px;
-  margin-right: auto;
-  margin-left: auto;
   background-image: url(../img/icon-2.svg);
   background-size: 64px 76px;
   background-repeat: no-repeat;
 }
 
-.icon-3 {
+.advantage-one-food::after {
+  content: "";
+  position: absolute;
+  display: block;
   width: 74px;
   height: 71px;
+  margin-left: 163px;
   margin-top: 61px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
   background-image: url(../img/icon-3.svg);
   background-size: 74px 71px;
   background-repeat: no-repeat;
@@ -440,7 +440,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   width: 568px;
-  height: 86px;
+  min-height: 86px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -454,7 +454,7 @@ a {
 .link-hidden {
   letter-spacing: 0.001px;
   font-stretch: ultra-condensed;
-  margin-top: -5px;
+  margin-top: -6px;
   margin-left: 1px;
 }
 
@@ -469,8 +469,10 @@ a {
 }
 
 .hidden-search-form {
-  display: none;
+  display: block;
   width: 1200px;
+  -webkit-animation: bounce 0.2s;
+  animation: bounce 0.2s;
 }
 
 .search-form {
@@ -494,7 +496,7 @@ a {
 
 .date_on {
   margin-left: 55px;
-  margin-top: 55px;
+  margin-top: 54px;
   margin-right: 55px;
 }
 
@@ -510,7 +512,7 @@ a {
 
 .date_off {
   margin-left: 55px;
-  margin-top: 28px;
+  margin-top: 29px;
   margin-right: 55px;
 }
 
@@ -532,6 +534,7 @@ a {
   text-transform: uppercase;
   font-stretch: semi-condensed;
   letter-spacing: 0.01em;
+  cursor: pointer;
 }
 
 .search:hover,
@@ -607,7 +610,6 @@ a {
   border: 1px solid #f2f2f2;
   background-color: #f2f2f2;
   border-collapse: collapse;
-  cursor: pointer;
 }
 
 .date-label-off,
@@ -616,6 +618,11 @@ a {
   margin-right: 12px;
   letter-spacing: 0.02em;
   font-stretch: normal;
+}
+
+.date-label-off label,
+.date-label-on label {
+  cursor: pointer;
 }
 
 .choice-date:hover,
@@ -668,6 +675,7 @@ a {
   letter-spacing: 0.05em;
   font-stretch: semi-condensed;
   margin-left: 13px;
+  cursor: pointer;
 }
 
 input::-webkit-input-placeholder {
@@ -718,6 +726,8 @@ input:-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
   width: 229px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -725,6 +735,8 @@ input:-ms-input-placeholder {
 }
 
 .click-plus-minus {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -734,6 +746,11 @@ input:-ms-input-placeholder {
 
 .little-people {
   margin-left: 51px;
+  cursor: pointer;
+}
+
+.big-people {
+  cursor: pointer;
 }
 
 .plus-minus {
@@ -743,6 +760,7 @@ input:-ms-input-placeholder {
   border: none;
   outline: none;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .click-minus {
@@ -805,13 +823,15 @@ input:-ms-input-placeholder {
 
 .map {
   width: 1200px;
-  min-height: 474px;
+  min-height: 463px;
   background-image: url(../img/map2.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
+  background-color: #cbdda9;
+  font-size: 0;
 }
 
-.map iframe {
-  height: 474px;
+iframe {
+  min-height: 463px;
   width: 1200px;
   border: 0;
 }
@@ -821,18 +841,14 @@ input:-ms-input-placeholder {
   background-position: center -59px;
   background-size: 1200px;
   background-repeat: no-repeat;
+  background-color: #64717c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 1200px;
+  min-height: 218px;
   color: white;
-  padding-top: 28px;
-  padding-bottom: 12px;
   margin-top: 0;
-}
-
-fieldset {
-  border: 0 none;
 }
 
 .infra,
@@ -846,8 +862,8 @@ fieldset {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 0;
-  margin-top: 0;
-  margin-bottom: -5px;
+  margin-top: 12px;
+  margin-bottom: 0;
   padding-bottom: 0;
 }
 
@@ -857,11 +873,15 @@ fieldset {
 }
 
 .infra {
-  margin-left: 60px;
+  margin-left: 71px;
 }
 
 .type {
-  margin-left: 86px;
+  margin-left: 109px;
+}
+
+.cost {
+  margin-left: 339px;
 }
 
 .legend {
@@ -889,6 +909,11 @@ fieldset {
   line-height: 21px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.label {
+  cursor: pointer;
+  letter-spacing: 0.01em;
 }
 
 .info-cheсk {
@@ -974,15 +999,12 @@ fieldset {
   font-stretch: condensed;
   letter-spacing: 0.005em;
   padding-top: 2px;
+  cursor: pointer;
 }
 
 .cost-btn:hover {
   background-color: white;
   color: black;
-}
-
-.cost {
-  margin-left: 316px;
 }
 
 .value-cost {
@@ -991,6 +1013,8 @@ fieldset {
   color: white;
   border: 0;
   width: 56px;
+  cursor: pointer;
+  letter-spacing: 0.0007em;
 }
 
 .value-min,
@@ -999,6 +1023,7 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   width: 159px;
+  cursor: pointer;
 }
 
 .value-against {
@@ -1052,6 +1077,7 @@ fieldset {
   background-image: url(../img/filter-button.svg);
   background-size: 100% 100%;
   margin-top: -2px;
+  cursor: pointer;
 }
 
 .toggle:hover {
@@ -1087,7 +1113,6 @@ fieldset {
   width: 1200px;
   background-color: white;
   border-bottom: solid 1px #e5e5e5;
-  margin-bottom: 1px;
 }
 
 .type-sorted {
@@ -1098,7 +1123,7 @@ fieldset {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 31px;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1156,7 +1181,7 @@ fieldset {
 
 .arrow-sorted {
   padding-right: 68px;
-  margin-top: 3px;
+  margin-top: 9px;
 }
 
 .arrow {
@@ -1204,6 +1229,7 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   width: 1200px;
+  min-height: 149.5px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1241,8 +1267,6 @@ fieldset {
   -ms-flex-align: center;
   align-items: center;
   margin-left: 73px;
-  margin-top: 28px;
-  margin-bottom: 30px;
 }
 
 .info-detail-price a {
@@ -1280,14 +1304,8 @@ fieldset {
   padding-bottom: 14px;
 }
 
-.hotel-name-villas,
-.hotel-price-villas {
-  padding-bottom: 13px;
-}
-
-.hotel-link {
-  margin-top: -3px;
-  padding-bottom: 7px;
+.hotel-name {
+  letter-spacing: 0.01em;
 }
 
 .hotel-link a {
@@ -1296,22 +1314,19 @@ fieldset {
   font-weight: bold;
 }
 
-.amara {
-  letter-spacing: 0.02em;
-}
-
-.villas {
+.hotel-link {
   letter-spacing: 0.015em;
-  margin-top: -1px;
+  margin-top: -2px;
+  margin-bottom: 6px;
 }
 
 .star-rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 66px;
-  margin-top: 29px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 29px;
+  margin-right: 64px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1372,7 +1387,7 @@ fieldset {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 110px;
+  width: 111px;
   height: 27px;
   background-size: 110px 27px;
   background-color: #81b3d2;
@@ -1400,8 +1415,8 @@ fieldset {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 27px;
-  width: 142px;
+  min-height: 27px;
+  width: 143px;
   background-size: 142px 27px;
   background-color: #766357;
   text-align: center;
@@ -1418,7 +1433,7 @@ fieldset {
 }
 
 .hotel-villas {
-  margin-bottom: 9px;
+  margin-bottom: 0;
 }
 
 .social-info {
@@ -1432,9 +1447,8 @@ fieldset {
   text-align: center;
   clear: both;
   background-color: white;
-  padding-top: 34px;
+  padding-top: 35px;
   padding-bottom: 36px;
-  margin-top: -10px;
 }
 
 .twit a {
@@ -1442,7 +1456,8 @@ fieldset {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin-top: -4px;
+  margin-top: -3px;
+  margin-left: 2px;
 }
 
 .social {
@@ -1496,18 +1511,18 @@ fieldset {
 }
 
 .htmlacademy {
-  width: 115px;
-  height: 41px;
+  width: 113px;
+  height: 44px;
   font-size: 0;
   background-image: url(../img/logo-htmlacademy.svg);
   background-repeat: no-repeat;
-  background-size: 115px 41px;
+  background-size: 113px 44px;
   vertical-align: middle;
 }
 
 .copyright b {
   margin-top: -1px;
-  margin-left: 1px;
+  margin-left: 2px;
   margin-right: 9px;
   letter-spacing: 0.0009px;
   font-stretch: condensed;
@@ -1526,9 +1541,12 @@ fieldset {
 }
 
 .modal-show {
-  display: block;
-  -webkit-animation: bounce 0.2s;
-  animation: bounce 0.2s;
+  display: none;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 @-webkit-keyframes bounce {
@@ -1592,5 +1610,57 @@ fieldset {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@-webkit-keyframes shake {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
   }
 }

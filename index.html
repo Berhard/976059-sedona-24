@@ -13,9 +13,9 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="main-menu">
-        <li class="link-navigation info-navigation"><a class="navigation">Информация</a></li>
-        <li class="link-navigation photo-navigation"><a class="navigation">Фото и видео</a></li>
-        <li class="link-navigation map-navigation"><a class="navigation">Карта штата</a></li>
+        <li class="link-navigation info-navigation"><a href="#" class="navigation">Информация</a></li>
+        <li class="link-navigation photo-navigation"><a href="#" class="navigation">Фото и видео</a></li>
+        <li class="link-navigation map-navigation"><a href="#" class="navigation">Карта штата</a></li>
         <li class="link-navigation hotels-navigation"><a class="navigation" href="hotels.html">Гостиницы</a></li>
       </ul>
       <div class="main-header-logo"><a>
@@ -25,7 +25,7 @@
   </header>
   <main class="container">
     <div class="welcome">
-      <div class="welcome-sedona"><img src="img/welcome.png" width="459" height="330" alt="Welcome to Sedona"></div>
+      <img src="img/welcome.png" width="459" height="330" alt="Welcome to Sedona">
     </div>
     <section class="title">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -47,12 +47,10 @@
       </div>
       <div class="advantage-one-detailed">
         <div class="advantage-one-home">
-          <div class="icon-1"></div>
           <b class="home">Жильё</b>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
         <div class="advantage-one-food">
-          <div class="icon-3"></div>
           <b class="food">Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
@@ -92,7 +90,7 @@
       <b>Заинтересовались?</b>
       <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <div class="link-hidden-form">
-        <a class="link-hidden">Поиск гостиницы в Седоне</a>
+        <a class="link-hidden" href="#">Поиск гостиницы в Седоне</a>
       </div>
     </div>
     <div class="hidden-search-form">
@@ -101,7 +99,7 @@
           <div class="calendar-choice">
             <div class="date-label-on"><label for="date_on">Дата заезда:</label></div>
             <div class="choice-date">
-              <input class="calendar" type="text" name="date_on" id="date_on" placeholder="24 апреля 2017" required>
+              <input class="calendar" type="text" name="date_on" id="date_on" placeholder="24 апреля 2017">
               <a class="link-calendar"><span class="visually-hidden">календарь</span></a>
             </div>
           </div>
@@ -110,7 +108,7 @@
           <div class="calendar-choice">
             <div class="date-label-off"><label for="date_off">Дата выезда:</label></div>
             <div class="choice-date">
-              <input class="calendar" type="text" name="date_off" id="date_off" placeholder="4 июля 2017" required>
+              <input class="calendar" type="text" name="date_off" id="date_off" placeholder="4 июля 2017">
               <a class="link-calendar"><span class="visually-hidden">календарь</span></a>
             </div>
           </div>
@@ -120,7 +118,7 @@
             <label class="big-people" for="number_big">Взрослые:</label>
             <div class="click-plus-minus big-people-value">
               <button class="click-minus"></button>
-              <input class="plus-minus" type="text" id="number_big" name="number_big" value="2" size="1" required pattern="^[ 0-9]+$">
+              <input class="plus-minus" type="text" id="number_big" name="number_big" value="2" size="1" pattern="^[ 0-9]+$">
               <button class="click-plus"></button>
             </div>
           </div>
@@ -128,7 +126,7 @@
             <label class="little-people" for="number_little">Дети:</label>
             <div class="click-plus-minus">
               <button class="click-minus"></button>
-              <input class="plus-minus" type="text" id="number_little" name="number_little" value="0" size="1" required pattern="^[ 0-9]+$">
+              <input class="plus-minus" type="text" id="number_little" name="number_little" value="0" size="1" pattern="^[ 0-9]+$">
               <button class="click-plus"></button>
             </div>
           </div>
@@ -157,25 +155,7 @@
       <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
     </div>
   </footer>
-  <script>
-    var link = document.querySelector(".link-hidden-form");
-    var popup = document.querySelector(".hidden-search-form");
-    var dateon = popup.querySelector("[name=date_on]")
-
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.toggle("modal-show");
-      dateon.focus();
-    });
-    window.addEventListener("keydown", function(evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-        }
-      }
-    });
-  </script>
+  <script  src="js/script.js"></script>
 </body>
 
 </html>
