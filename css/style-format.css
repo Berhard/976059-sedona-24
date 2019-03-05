@@ -75,7 +75,7 @@ a {
   background-color: white;
   min-height: 26px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .info-navigation {
@@ -240,7 +240,7 @@ a {
   margin-right: 68px;
 }
 
-.advantage-four p{
+.advantage-four p {
   margin-left: 65px;
   margin-right: 65px;
 }
@@ -253,7 +253,7 @@ a {
   display: flex;
   max-width: 1200px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .advantage-three-four-five {
@@ -460,7 +460,7 @@ a {
   background-position: center center;
   cursor: pointer;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .link-hidden {
@@ -505,7 +505,7 @@ a {
   box-shadow: 0 10px 10px 5px rgba(0, 0, 0, .1);
   margin-left: 316px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .date_on {
@@ -601,7 +601,7 @@ a {
   justify-content: space-between;
   width: 458px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .calendar-choice {
@@ -867,7 +867,7 @@ iframe {
   color: white;
   margin-top: 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .infra,
@@ -1044,8 +1044,8 @@ iframe {
   width: 159px;
   cursor: pointer;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .value-against {
@@ -1135,6 +1135,8 @@ iframe {
   width: 1200px;
   background-color: white;
   border-bottom: solid 1px #e5e5e5;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .type-sorted {
@@ -1149,6 +1151,8 @@ iframe {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .sort {
@@ -1255,7 +1259,7 @@ iframe {
   min-height: 149.5px;
   background-color: white;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .information,
@@ -1268,6 +1272,8 @@ iframe {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .information {
@@ -1298,6 +1304,8 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .hotel-photo1,
@@ -1340,6 +1348,8 @@ iframe {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 30px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .star {
@@ -1459,7 +1469,7 @@ iframe {
   padding-bottom: 36px;
   opacity: 0.9;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .twit a {
@@ -1483,6 +1493,8 @@ iframe {
   justify-content: center;
   width: 400px;
   text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .social-btn {
@@ -1501,6 +1513,8 @@ iframe {
   background-color: #81b3d2;
   background-position: center;
   background-repeat: no-repeat;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .social-btn:hover,
