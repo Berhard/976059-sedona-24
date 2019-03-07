@@ -48,6 +48,7 @@ a {
   top: 0;
   margin-left: 530px;
   z-index: 1;
+  width: 244px;
 }
 
 .main-header-logo a {
@@ -78,16 +79,16 @@ a {
   flex-wrap: wrap;
 }
 
+.main-menu li:nth-child(2){
+  margin-right: 244px;
+}
+
 .info-navigation {
   margin-right: 0;
 }
 
 .info-navigation a {
   margin-left: -3px;
-}
-
-.photo-navigation {
-  margin-right: 244px;
 }
 
 .photo-navigation a {
